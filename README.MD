@@ -1,7 +1,6 @@
-## The Git and Github Bootcamp Notes 
-
-
+## The Git and Github Bootcamp Notes
 
 **Contents**:
 
-- [Chap 1 | Course Oriennatation]()
+- [Chap 1 | Course Orientation](https://github.com/SuvadeepMukherjee/The-Git-and-Github-Bootcamp/tree/main/Chapter%3A1%20Course%20Orientation)
+- 
