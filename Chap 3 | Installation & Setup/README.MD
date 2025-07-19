@@ -38,7 +38,7 @@ git config user.email
 5. cd .. 
    - go back one directory 
 
-6. touch 
+6. `touch file`
    - create a file / multiple files 
    - eg `touch app.js`, `touch Pets/Horses/rocky.png`, `touch red.txt orange.py`
 
@@ -46,5 +46,13 @@ git config user.email
    - make a directory or multiple directories
    - `mkdir Hello` , `mkdir seaTurtles landTurtles`
 
- 
+8.  `rm file`
+   - delete a file or files permanently 
+   - It permanently removes them 
+   - `rm deleteMe.docx` (Must be in the same folder)
+
+9. `rm - rf <dir>`
+   - delete a directory directory 
+   - r =recursive , f= force 
+   - `rm -rf LandTurtles`
 
