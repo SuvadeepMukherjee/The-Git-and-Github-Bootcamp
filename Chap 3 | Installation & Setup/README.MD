@@ -32,7 +32,7 @@ git config user.email
    - print working directory 
    - print the path to the working directory (where we currently are)
 
-4. cd  <directory>
+4. `cd  <dir>`
    - change to specified directory 
 
 5. cd .. 
