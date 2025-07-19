@@ -5,9 +5,9 @@
 Check Current name and  email 
 
 ```bash
-git config --global user.name
+git config --global user.name "suvadeep"
 
-git config --global user.email
+git config --global user.email "suvadeepm0709@gmail.com"
 ```
 
 Set name and Email 
@@ -46,7 +46,7 @@ git config user.email
    - make a directory or multiple directories
    - `mkdir Hello` , `mkdir seaTurtles landTurtles`
 
-8.  `rm file`
+8. `rm file`
    - delete a file or files permanently 
    - It permanently removes them 
    - `rm deleteMe.docx` (Must be in the same folder)
