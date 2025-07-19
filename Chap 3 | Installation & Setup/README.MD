@@ -38,3 +38,13 @@ git config user.email
 5. cd .. 
    - go back one directory 
 
+6. touch 
+   - create a file / multiple files 
+   - eg `touch app.js`, `touch Pets/Horses/rocky.png`, `touch red.txt orange.py`
+
+7. mkdir 
+   - make a directory or multiple directories
+   - `mkdir Hello` , `mkdir seaTurtles landTurtles`
+
+ 
+
