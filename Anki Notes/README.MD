@@ -157,7 +157,7 @@ git commit --amend
 
 - q 
 
-##### Q6:How can we tell Git which files and directories to ignore in a given repository using a _____ file 
+##### Q6: We tell Git which files and directories to ignore in a given repository using a _____ file 
 
 **Answer**: 
 
