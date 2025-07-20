@@ -20,7 +20,7 @@
 
 **Common Early Git Mistakes**:
 
-- Git tarcks a directory and all nested subdirectories
+- Git tracks a directory and all nested subdirectories
 - Thus do not init a repo inside of a repo 
   - Before running git init , use git status first to verify that we are not currently inside a repo 
   - We can check all files with `ls -a` and if we are not careful we can delete `.git` folder with `rm -rf`
