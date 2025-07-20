@@ -1,6 +1,6 @@
 ## Anki Notes 
 
-#### Chap 3 | Installation & Setup 
+#### Chap 3 | Installation & Setup (Anki Tag : 03-installation-and-setup)
 
 **Q1**: Git command to set name and email ? 
 
@@ -24,7 +24,7 @@ git config user.name
 git config user.email
 ```
 
-#### **Q3**: Git command for the following 
+#### **Q3**: Terminal  commands  for the following 
 
 1. list the contents of current working directory/ specified working directory
 2. Open the current working directory , open a specified folder 
