@@ -8,8 +8,7 @@
 
 **Commit Messages**:
 
-- Use Present-tense imperative style 
-- Do: make xyzy do abc 
+- Order the code base to change its behavior 
 - Example ➡️ fix: handle null values in user input validation
 
 **Commit messages with git commit in Vim**:
@@ -18,6 +17,8 @@
 2. Enter Commit message
 3. ESC ➡️ Leave insert mode 
 4. :wq ⏎ ➡️  Exit VIM 
+
+✅ **I Eat Worms Quickly** → `i` → `ESC` → `:wq` → Insert → Escape → Save & Exit
 
 **git log --oneline**:
 
