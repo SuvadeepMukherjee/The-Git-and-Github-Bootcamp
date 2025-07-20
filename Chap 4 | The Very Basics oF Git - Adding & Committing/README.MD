@@ -2,7 +2,7 @@
 
 
 
-**What is A Git Repo ? **
+**What is A Git Repo** ? 
 
 - A Git Repo (Repository) is a workspace which tracks and manages files within a folder 
 - A repo for a project / app /...
