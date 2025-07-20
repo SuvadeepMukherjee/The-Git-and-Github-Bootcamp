@@ -116,7 +116,7 @@ To see logs of all commits use ➡️ `git log`
 **Answer**:
 
 - Commits should be atomic (keep each commit focussed on a single thing)
-- Commit messages should be *present-tense imperative style* like fix: handle null values in user input validation 
+- Commit messages must be like "ordering the code base to change behavior"
 
 #### Q2:How to write longer commit messages with git commit in Vim ? 
 
