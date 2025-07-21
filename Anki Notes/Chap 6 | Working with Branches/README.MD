@@ -4,9 +4,7 @@ Chap 6 | Working with branches (Anki Tag: 06-working-with-branches)
 
 #### Q1:What is the master branch ? 
 
-**Answer**:The default branch name is master , According to official convention git has renamed the name master while github has changed the name to main
-
-head is a reference to a branch pointer and a branch pointer is where a branch currently is .Each branch has a branch reference pointing to where we left off  
+**Answer**:The default branch name is master , According to official convention git has renamed the name master while github has changed the name to main 
 
 #### Q2:What is a branch ? 
 
