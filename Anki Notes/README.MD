@@ -107,6 +107,12 @@ add individual files from working directory to staging area with ➡️ `git add
 
 To see logs of all commits use ➡️ `git log`
 
+#### Q7:What is the command to add all modified files and commit in shortcut way ? 
+
+**Answer**:
+
+`git commit -a -m "message"`
+
 ------
 
 ## Chap 5 | Commits in details (05-commits-in-details)

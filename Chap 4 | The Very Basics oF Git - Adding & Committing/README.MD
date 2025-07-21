@@ -42,6 +42,7 @@
   - need to provide a commit message that summarizes the changes 
 - The -m flag allows us to pass in an inline commit message 
   - `git commit -m "message"`
+- Use `git commit -a -m "msg"`, to add all modified files and commit in shortcut way
 - use `git log` to see the change log 
 
 
