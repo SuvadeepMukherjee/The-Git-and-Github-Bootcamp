@@ -1,6 +1,6 @@
 ## Chap 6 | Working with branches 
 
-### Branches Introduction
+**Branches Introduction**
 
 1. When we make a commit , each commit gets a hash (a unique identifier that corresponds to the commit) and each commit references at least one parent commit
 2. Contexts: on large projects, we often work in multiple contexts
@@ -13,10 +13,21 @@
 
 4. Branches
 
-   - **Alternative timelines** for a project
+   - Alternative timelines for a project
 
-   - They enable us to create separate contexts where we can try new things, or even work on multiple ideas **in parallel**
+   - They enable us to create separate contexts where we can try new things, or even work on multiple ideas in parallel
 
-   - If we make changes on one branch, they do not impact the other branches, unless we merge the **changes**
+   - If we make changes on one branch, they do not impact the other branches, unless we merge the changes
 
 <img src="../Assets/branch.png" alt="branch" style="zoom:33%;" />
+
+
+
+**The Master Branch**:
+
+The default branch name is **master**
+
+- It is just the same as other branches
+
+Many people designate the master branch as their "source of truth" or the "official branch" for their codebase, but that is left to you to decide
+
