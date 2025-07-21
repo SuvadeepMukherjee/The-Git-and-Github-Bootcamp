@@ -30,15 +30,21 @@ Look for the * which indicates the branch we are currently on
 
 Press `q` to exit
 
-#### Q5:What is the 3 ways  to make a new branch based upon the current HEAD and switch to it ?
+#### Q5:What is the  ways  to make a new branch based upon the current HEAD and then switch to it ?
 
 **Answer**:
 
 - Use `git branch <branch-name>` to make a new branch based upon the current HEAD .This just creates the branch , it does not switch you to that branch (the HEAD stays the same). Once you have created a new branch, use `git switch <branch-name>` to switch to it
-- Another way of switch: `git checkout <branch-name>`, but this command does a million additional things
-- Create and switch to a branch **at the same time**: `git switch -c <branch-name>` or `git checkout -b <branch-name>`
-  - `-c` stands for create
-  - `-b` stands for branch
+- Another way of switch: `git checkout <branch-name>`(This only switches the branch does not create it) , but this command does a million additional things
+
+#### Q6:Create a new branch and directly switch to that branch in 2 different ways 
+
+**Answer**:
+
+Create and switch to a branch **at the same time**: `git switch -c <branch-name>` or `git checkout -b <branch-name>`
+
+- `-c` stands for create
+- `-b` stands for branch
 
 #### Q6:If you switch branches with unstaged changes when we will get an error and what are the ways to fix the error also when we will not get error ? 
 
