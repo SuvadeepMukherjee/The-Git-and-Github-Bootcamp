@@ -11,7 +11,7 @@ Anki Tag : 04-adding-and-committing
 - A git repo is a workspace which tracks and manages files within a folder
 - We can have  as many repos on our machine as needed , all with seperate histories and contents 
 
-![](/Users/suvadeep/Desktop/The Git and Github Bootcamp/Assets/git-repo.png)
+![](../../Assets/git-repo.png)
 
 **Q2**: How to check the status of a git repo ? 
 
@@ -43,7 +43,7 @@ Staging Area ➡️ We add files from the working directory to the staging area 
 
 Repository ➡️ We move files from the the staging area to the Repository with `git commit`
 
-![](/Users/suvadeep/Desktop/The Git and Github Bootcamp/Assets/committing-workflow.png) 
+![](../../Assets/committing-workflow.png) 
 
 **Q6**: How to add all files and individual files from Working directory to staging area ? 
 
