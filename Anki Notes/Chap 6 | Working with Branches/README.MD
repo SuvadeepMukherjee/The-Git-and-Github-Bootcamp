@@ -35,7 +35,8 @@ Press `q` to exit
 **Answer**:
 
 - Use `git branch <branch-name>` to make a new branch based upon the current HEAD .This just creates the branch , it does not switch you to that branch (the HEAD stays the same). Once you have created a new branch, use `git switch <branch-name>` to switch to it
-- Another way of switch: `git checkout <branch-name>`(This only switches the branch does not create it) , but this command does a million additional things
+- Another way of switch: `git checkout <branch-name>`(This only switches the branch does not create it) , 
+- Note ➡️ git checkout  does a million additional things
 
 #### Q6:Create a new branch and directly switch to that branch in 2 different ways 
 
@@ -46,20 +47,20 @@ Create and switch to a branch **at the same time**: `git switch -c <branch-name>
 - `-c` stands for create
 - `-b` stands for branch
 
-#### Q6:If you switch branches with unstaged changes when we will get an error and what are the ways to fix the error also when we will not get error ? 
+#### Q7:If you switch branches with unstaged changes when will we  get an error, when will we not get an error  and what are the ways to fix the error ? 
 
 **Answer**:
 
 - If you switch branches with unstaged changes we will get an error if the unstaged changes are not a new file 
 
-- Two options:
+- Two options of fixing the error
 
   - commit it 
   - stash it 
 
-  We will not get an error if the unstaged changes are not in a new file and the new file will be moved to the new branch 
+  We will not get an error if the unstaged changes are  in a new file and the new file will be moved to the new branch 
 
-#### Q7:What is the command to delete a branch ? 
+#### Q8:What is the command to delete a branch ? 
 
 **Answer:**
 
@@ -68,9 +69,11 @@ Use `git branch -d <branch-name>`
 - You cannot be in that branch if you want to delete it
 - You cannot delete a branch thats not fully merged , we can confirm we want to delete it with the D flag i,e `git branch -D <branch-name>`
 
-#### Q8:What is the command to rename a branch ? 
+#### Q9:What is the command to rename a branch ? 
 
 **Answer**:
 
-Use `git branch -m <new-branch-name>` to rename a branch, when **you are in the branch** you want to rename
+Use `git branch -m <new-branch-name>` to rename a branch, 
+
+Note  ➡️  we must be on the   the branch we want to rename
 
