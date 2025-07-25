@@ -1,14 +1,6 @@
-## Anki Notes 
+## Chap 5 | Commits in details 
 
-
-
-------
-
-
-
-------
-
-## Chap 5 | Commits in details (05-commits-in-details)
+Anki Tag ➡️ 05-commits-in-details
 
 #### Q1: How should commits be and how should commit messages be ? 
 
@@ -30,7 +22,7 @@
  → `i` → `ESC` → `:wq`
  → Insert → Escape → Save & Exit
 
-#### Q3: We can write longer commit messages with git commit and then writing the commit message in vim , when writing the commit message we can use a concise one-sentence summary as the first sentence and then add a longer summaty if necessary .This way we can use _______ to display a concise git log 
+#### Q3: We can write longer commit messages with git commit and then write the commit message in vim , when writing the commit message we can use a concise one-sentence summary as the first sentence and then add a longer summary if necessary .This way we can use _______ to display a concise git log 
 
 **Answer**:
 
