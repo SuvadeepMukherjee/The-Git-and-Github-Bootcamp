@@ -4,7 +4,7 @@ Chap 6 | Working with branches (Anki Tag: 06-working-with-branches)
 
 #### Q1:What is the master branch ? 
 
-**Answer**:The default branch name is master , According to official convention GitHub has renamed the name master while git has changed the name to main from master 
+**Answer**:The default branch name is master ,  GitHub has renamed the  master name to main while git has kept the name master 
 
 #### Q2:What is a branch ? 
 
