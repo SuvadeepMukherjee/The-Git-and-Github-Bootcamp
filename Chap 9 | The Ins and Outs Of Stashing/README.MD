@@ -19,3 +19,20 @@ Stashing ➡️➡️ Git provides an easy way of stashing these uncommitted cha
 
 - We can use *git stash apply* to apply whatever is stashed away without removing it from the stash
 - This can be useful if we want to apply stashed changes to multiple branches 
+
+## Multiple Stashes
+
+- We can add multiple stashes onto the stack of stashes .They will all be stashed away in the order we added them 
+- Viewing stashes : `git stash list`![git-stash-list](../Assets/git-stash-list.png)
+
+Note ➡️  ➡️ WIP(work in progress) on <branch> : <most-recent-commit-hash> <most recent commit message>
+
+Applying Specific Stashes: 
+
+- git assumes we want to apply the most recent stash when we run `git stash apply` but we can also specify a particular stash like `git stash apply stash@{2}`
+
+## Dropping and Clearing the stash 
+
+- To delete a particular stash use the following command ![drop-stash](../Assets/drop-stash.png)
+
+Example ➡️ git stash drop "stash@{2}"
