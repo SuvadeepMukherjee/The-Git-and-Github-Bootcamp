@@ -8,3 +8,14 @@ Imagine when you switch to other branches with uncommitted files on current bran
 - Git wont let me switch if it detects potiential conflicts 
 
 Stashing ➡️➡️ Git provides an easy way of stashing these uncommitted changes so that we can return to them later , without having to make unnecessary commits
+
+## Git Stash save / pop 
+
+- git stash or git stash save help you save changes that we are not yet ready to commit .We can stash changes and then come back to them later 
+- Running git stash will take all uncommitted changes (staged and unstaged) and stash them in our working directory 
+- git stash pop removes the most recently stashed changes in your stash and re-apply them in your working directory 
+
+## Git Stash Apply 
+
+- We can use *git stash apply* to apply whatever is stashed away without removing it from the stash
+- This can be useful if we want to apply stashed changes to multiple branches 
