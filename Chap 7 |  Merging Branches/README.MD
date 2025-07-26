@@ -36,7 +36,8 @@ Actually it looks like this , this is called a fast-forward
 ## Not All Merges Are Fast-Forwards!
 
 - Imagine one of your teammates merged in a new feature or change to master while you were working on a branch 
-- ![NFF](../Assets/NFF.png)
+
+  ![NFF](../Assets/NFF.png)
 
 - Two scenarios 
   - There is no conflict  ➡️ git can do the merge for us automatically 
@@ -46,17 +47,17 @@ Actually it looks like this , this is called a fast-forward
 
   - Rather than performing a simple fast forward , git performs a "merge commit"
   - We end up with a new commit on the master branch
-  - Git will prompt you for a message
-  - ![no-conflict](../Assets/no-conflict.png)
+  - Git will prompt you for a message![merge-no-conflicts-my-example](../Assets/merge-no-conflicts-my-example.png)
 
   - That merge commit will have two parent commits 
-  - ![](../Assets/merge-no-conflicts.png)
+
+    ![](../Assets/merge-no-conflicts.png)
 
 ## Merge Conflicts
 
 - Depending on the specific changes you are trying to merge , Git may not be able to automatically merge 
   - This results in merge conflicts, whivh we need to manually resolve 
-- When you encounter a merge conflict ,Git warns you in the console that it could not automatically merge ![merge-conflict](../Assets/merge-conflict.png) 
+- When you encounter a merge conflict ,Git warns you in the console that it could not automatically merge ![merge-conflicts-example-console](../Assets/merge-conflicts-example-console.png) 
 
 - It also changes the contents of our files to indicate the conflicts that it wants you to resolve
   - The content from your current HEAD (the branch you are trying to merge content into) is displayed between the <<<<<<< HEAD and =======
