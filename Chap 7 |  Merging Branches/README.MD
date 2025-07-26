@@ -51,3 +51,19 @@ Actually it looks like this , this is called a fast-forward
 
   - That merge commit will have two parent commits 
   - ![](../Assets/merge-no-conflicts.png)
+
+## Merge Conflicts
+
+- Depending on the specific changes you are trying to merge , Git may not be able to automatically merge 
+  - This results in merge conflicts, whivh we need to manually resolve 
+- When you encounter a merge conflict ,Git warns you in the console that it could not automatically merge ![merge-conflict](../Assets/merge-conflict.png) 
+
+- It also changes the contents of our files to indicate the conflicts that it wants you to resolve
+  - The content from your current HEAD (the branch you are trying to merge content into) is displayed between the <<<<<<< HEAD and =======
+  - The content from the branch you are trying to merge from is displayed between the ======= and >>>>>>> symbols.![merge-conflict-console](../Assets/merge-conflict-console.png)
+
+- Resolving conflicts 
+  - Open up the file(s) with merge conflicts
+  - Edit the file(s) to remove the conflicts.Decide which branch's content you want to keep in each conflict.Or keep the content from both 
+  - Remove the conflict "markers" in the document
+  - Add your changes and then make a commit! 
