@@ -1,4 +1,4 @@
-## Chap 7 | Merging Branches 
+# Chap 7 | Merging Branches 
 
 ## Introduction to Merge 
 
@@ -23,11 +23,11 @@ git merge bugfix
 
 Visualization 
 
-![FF1](../Assets/FF1.png)
+<img src="../Assets/FF1.png" alt="FF1" style="zoom:25%;" />
 
-![FF2](../Assets/FF2.png)
+<img src="../Assets/FF2.png" alt="FF2" style="zoom:25%;" />
 
-![FF3](../Assets/FF3.png)
+<img src="../Assets/FF3.png" alt="FF3" style="zoom:25%;" />
 
 Actually it looks like this , this is called a fast-forward
 
