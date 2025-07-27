@@ -99,3 +99,9 @@ Note ➡️ `git restore <file-name>` restores using HEAD as the default source 
   - Git will go back to that specified commit and delete the commits after that commit , but the changes you made in that commit will still remain 
   - Create a new branch or switch to that branch 
 
+#### Q10:What is the git command to remove both the commits and also the actual changes in your files ? 
+
+**Answer**:
+
+- `git reset --hard <commit-hash>`
+- This will remove both the files and the commits 

@@ -75,3 +75,9 @@ Select your source instead of HEAD
 ​		![x-git-reset-2](../Assets/x-git-reset-2.png)
 
  
+
+- If you want to undo both the commits and the actual changes in your files , you can use the --hard option :`git reset --hard commit-hash`
+
+![y-reset-hard](../Assets/y-reset-hard.png)
+
+![y-reset-hard-2](../Assets/y-reset-hard-2.png)
