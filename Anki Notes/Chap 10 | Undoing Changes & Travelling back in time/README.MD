@@ -88,3 +88,14 @@ Note ➡️ `git restore <file-name>` restores using HEAD as the default source 
 - If you have accidentally added a file to your staging area with git add and you dont wish to include it in the next commit you can use git restore to remove it from staging
 - Use the -- staged option : `git restore --staged app.js`
 
+#### Q9:You just made couple of commits on the master branch but you actually meant to make them on a seperate branch instead 
+
+#### How can you keep that work but move it onto another branch ? 
+
+**Answer**:
+
+- Get the first 7 digits commit has with git log --oneline 
+- `git reset <first-7-digits-hash>` 
+  - Git will go back to that specified commit and delete the commits after that commit , but the changes you made in that commit will still remain 
+  - Create a new branch or switch to that branch 
+

@@ -65,6 +65,13 @@ Select your source instead of HEAD
 - If you have accidentally added a file to your staging area with git add and you dont wish to include it in the next commit you can use git restore to remove it from staging
 - Use the -- staged option : `git restore --staged app.js`
 
+## Undoing Changes with Git reset 
 
+- Suppose you've just made a couple of commits on the master branch, but you actually meant to make them on a separate branch instead
+
+- To **undo those commits**, you can use `git reset <commit-hash>`, which will reset the repo back to a specific commit, **the commits are gone**
+- Git will go back to the specified commit and delete the commits after that commit , but that changes you made in that commit will still remain ![x-git-reset-1](../Assets/x-git-reset-1.png)
+
+​		![x-git-reset-2](../Assets/x-git-reset-2.png)
 
  
