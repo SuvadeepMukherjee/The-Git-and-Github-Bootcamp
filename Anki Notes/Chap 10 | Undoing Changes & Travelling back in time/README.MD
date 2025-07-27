@@ -40,7 +40,7 @@ Detached HEAD ➡️
   git checkout d8194d6
   ```
 
-  ![01-detached-head](/Users/suvadeep/Desktop/The Git and Github Bootcamp/Assets/01-detached-head.png)
+  ![01-detached-head](../../Assets/01-detached-head.png)
 
 
 
