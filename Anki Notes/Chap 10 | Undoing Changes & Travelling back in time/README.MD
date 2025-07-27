@@ -44,3 +44,39 @@ Detached HEAD ➡️
 
 
 
+#### Q5:How to view the nth commit beyond HEAD ? 
+
+**Answer**:
+
+```bash
+git checkout HEAD~n
+```
+
+Example ➡️ `git checkout HEAD~2`
+
+Note ➡️ We will be in detached HEAD
+
+- HEAD ~ 1 refers to the commit before HEAD (parent)
+- HEAD ~ 2 refers to 2 commits before HEAD (grandparent)
+
+![03-git-checkout](../../Assets/03-git-checkout.png)
+
+#### Q6:Suppose you have made some changes to a file but dont want to keep them i.e to revert the file back to whatever it looked like when you last committed . What are the 2 ways of achieving it ? 
+
+**Answer**:
+
+- `git checkout HEAD <file>` for example `git checkout HEAD index.js`
+- `git checkout -- <file>` for example  `git checkout -- index.js`
+
+#### Q7:Suppose you have made some changes to a file since your last commit .You have saved the file but then realize you do not want those changes anymore 
+
+#### 1. Restore the file (home.html) to the contents in the HEAD 
+
+#### 2.Restore the contents of the file(home.html) to its state 2 commits prior to HEAD 
+
+**Answer**:
+
+1. `git restore home.html`
+2. `git restore --source HEAD~2 home.html`
+
+Note ➡️ `git restore <file-name>` restores using HEAD as the default source , but we can change that using the --source option .For example , `git restore HEAD ~ 2 home.html` : restores the contents of home.html to its state 2 commits prior to HEAD
