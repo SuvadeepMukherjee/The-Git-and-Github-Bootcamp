@@ -81,3 +81,19 @@ Select your source instead of HEAD
 ![y-reset-hard](../Assets/y-reset-hard.png)
 
 ![y-reset-hard-2](../Assets/y-reset-hard-2.png)
+
+#### Q12:What is the difference between git reset and git revert ? 
+
+**Answer**:
+
+- `git revert` is similar to `git reset` in that they both "undo" changes, but they accomplish it in different ways
+
+  - `git reset` actually **moves the branch pointer backwards**, eliminating commits![git-reset](../Assets/git-reset.png)
+
+  - `git revert` instead **creates a brand new commit** which reverses/undos the changes from a commit. Because it results in a new commit, you will be prompted to enter a commit message![git-revert](../Assets/git-revert.png)
+
+- Which one should i use ? 
+  - Both `git reset` and `git revert` help us reverse changes, but there is a significant difference when it comes to **collaboration**
+  - If you want to reverse some commits that **other people already have on their machines**, you should use **revert**
+  - If you want to reverse commits that you **haven't shared with others**, use **reset** and no one will ever know
+
