@@ -60,4 +60,11 @@ Select your source instead of HEAD
 -  `git restore <file-name>`restores using HEAD as the default source but we can change that using the --source option
 - For example `git restore -- source HEAD ~ 1 home.html` restores the contents of home.html to its state from the commit prior to HEAD 
 
+## Un-Staging Changes with Git restore 
+
+- If you have accidentally added a file to your staging area with git add and you dont wish to include it in the next commit you can use git restore to remove it from staging
+- Use the -- staged option : `git restore --staged app.js`
+
+
+
  

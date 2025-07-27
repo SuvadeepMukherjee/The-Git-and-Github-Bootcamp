@@ -80,3 +80,11 @@ Note ➡️ We will be in detached HEAD
 2. `git restore --source HEAD~2 home.html`
 
 Note ➡️ `git restore <file-name>` restores using HEAD as the default source , but we can change that using the --source option .For example , `git restore HEAD ~ 2 home.html` : restores the contents of home.html to its state 2 commits prior to HEAD
+
+#### Q8:You have accidentally added a file to your staging area and you dont wish to include it in the next commit , How to remove it from the staging area ? 
+
+**Answer**:
+
+- If you have accidentally added a file to your staging area with git add and you dont wish to include it in the next commit you can use git restore to remove it from staging
+- Use the -- staged option : `git restore --staged app.js`
+
