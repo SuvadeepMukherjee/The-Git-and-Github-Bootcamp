@@ -30,3 +30,20 @@ When we clone a repo to our local machine from Github, we'll have two branch ref
 - We can checkout on these remote branch pointers using `git checkout origin/master`
 
 Note ➡️ This will put us in detached HEAD
+
+#### Q4:Once we have cloned a repository we have all the data and Git repository for the project at that moment in time .However that does not mean its all in my workspace 
+
+#### For example suppose we clone a Github repo that has a branch called puppies but when we run `git branch` we dont see it .All we see is the master branch 
+
+#### Whats going on ? and how can we get the puppies branch on our local branch and want it to be connected to origin/puppies 
+
+**Solution**:
+
+- When we clone some repo from Github the local master branch automatically tracks origin/master however other branches are not being tracked ![z-local-remote-tracking-1](../../Assets/z-local-remote-tracking-1.png)
+
+- By default the master branch already tracks origin/master
+- To have our own local branch called puppies and connected to origin/puppies just like my local master branch is connected to origin/master we have to run `git switch puppies`
+
+Note ➡️ `git switch <remote-branch-name>` creates a local branch from the remote branch of the same name AND sets it up to track the remote branch origin/<remote-branch-name> 
+
+![z-local-remote-tracking-2](../../Assets/z-local-remote-tracking-2.png)
