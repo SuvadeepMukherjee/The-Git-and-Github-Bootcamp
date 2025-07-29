@@ -82,3 +82,15 @@ Note ➡️ It also updates all the remote tracking branches
 **Solution**:
 
 `git fetch` ➡️ update all the remote tracking branches 
+
+#### Q8:What does the following command do ? 
+
+`git pull <remote> <branch>` 
+
+**Solution**:
+
+- git pull <remote> <branch> would fetch the latest information from the remote's (say origin) branch (say main) and merge those changes into our current branch 
+
+Note ➡️ It matters WHERE  we run this command from .Whatever branch we run it from is where the changes will be merged into 
+
+Note ➡️ Because of the merging , pulls can result in merge conflicts 🛑
