@@ -47,3 +47,38 @@ Note ➡️ This will put us in detached HEAD
 Note ➡️ `git switch <remote-branch-name>` creates a local branch from the remote branch of the same name AND sets it up to track the remote branch origin/<remote-branch-name> 
 
 ![z-local-remote-tracking-2](../../Assets/z-local-remote-tracking-2.png)
+
+#### Q5:What does fetching do ? 
+
+**Answer**:
+
+- Fetching allows us to download changes from a remote repository BUT those changes will not be automatically integrated into our working place 
+- It lets us see what others have been working on , without having to merge those changes into our local repo 
+- Think of it as "Please go and get the latest information from Github but dont screw up my working directory"![zzzz-git-fetch-vs-git-pull](../../Assets/zzzz-git-fetch-vs-git-pull.png)
+
+#### Q6:Explain the following git commands 
+
+1. `git fetch <remote> <branch>`
+2. `git fetch <remote>`
+3. `git fetch`
+
+**Solution**:
+
+`git fetch <remote> <branch>` ➡️ 
+
+- Fetch a specific branch from the remote 
+- It only updates the remote tracking branch of that specific branch
+
+`git fetch <remote>` ➡️ fetches branches and history from a specific remote repository .
+
+Note ➡️It also updates remote tracking branches of that remote 
+
+`git fetch` ➡️ Fetches branches and history from the default remote repository (origin)
+
+Note ➡️ It also updates all the remote tracking branches  
+
+#### Q7:What is the common use case of `git fetch` ?
+
+**Solution**:
+
+`git fetch` ➡️ update all the remote tracking branches 
