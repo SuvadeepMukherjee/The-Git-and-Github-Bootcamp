@@ -2,7 +2,7 @@
 
 #### Configuring Git 
 
-Check Current name and  email 
+Check Current name and  email:  
 
 ```bash
 git config --global user.name "suvadeep"
