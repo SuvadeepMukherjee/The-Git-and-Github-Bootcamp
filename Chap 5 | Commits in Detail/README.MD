@@ -4,7 +4,7 @@
 
 - When possible a commit should encompass a single feature , change or file 
 - In other words , keep each commit focussed on a single thing 
-- This makes it easier to undo or rollbach changes later on 
+- This makes it easier to undo or rollback changes later on 
 
 ## **Commit Messages**:
 
@@ -18,11 +18,11 @@
 3. ESC ➡️ Leave insert mode 
 4. :wq ⏎ ➡️  Exit VIM 
 
-✅ **I Eat Worms Quickly** → `i` → `ESC` → `:wq` → Insert → Escape → Save & Exit
+✅ **I Easily Eat Worms Quickly** ➡️`i`➡️Enter Commit Message ➡️ `ESC` ➡️ `:wq` ⏎
 
 ## **git log --oneline**:
 
-We can write longer commits with *git commit* , when writing a commit message , we can use a concise one-sentence summary as the first sentence and then add a longer summary if necessary.This way we can use *git log --oneline* to display a concise git log 
+We can write longer commits with *git commit* , when writing a commit message with `git commit`, we can use a concise one-sentence summary as the first sentence and then add a longer summary if necessary.This way we can use *git log --oneline* to display a concise git log 
 
 ## **Ammending Commits**:
 
