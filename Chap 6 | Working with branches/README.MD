@@ -31,7 +31,7 @@ The default branch name is **master**
 
 Many people designate the master branch as their "source of truth" or the "official branch" for their codebase, but that is left to you to decide
 
-**Head**:
+## **Head**:
 
 ![branch](../Assets/head.png)
 
@@ -63,7 +63,7 @@ Two options:
 - commit it 
 - stash it 
 
-We will not get an error if the unstaged changes are not in a new file and the new file will be moved to the new branch or 
+We will not get an error if the unstaged changes are  in a new file and the new file will be moved to the new branch  
 
 ## **Deleting & Renaming Branches**:
 

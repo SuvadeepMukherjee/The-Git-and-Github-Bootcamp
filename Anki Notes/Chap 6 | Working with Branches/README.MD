@@ -1,12 +1,12 @@
-## Anki Notes 
+# Chap 6 | Working with branches 
 
-Chap 6 | Working with branches (Anki Tag: 06-working-with-branches)
+Anki Tag: 06-working-with-branches
 
 #### Q1:What is the master branch ? 
 
 **Answer**:The default branch name is master ,  GitHub has renamed the  master name to main while git has kept the name master 
 
-#### Q2:What is a branch ? 
+#### Q2:What is a HEAD  ? 
 
 **Answer**:
 
@@ -35,7 +35,7 @@ Press `q` to exit
 **Answer**:
 
 - Use `git branch <branch-name>` to make a new branch based upon the current HEAD .This just creates the branch , it does not switch you to that branch (the HEAD stays the same). Once you have created a new branch, use `git switch <branch-name>` to switch to it
-- Another way of switch: `git checkout <branch-name>`(This only switches the branch does not create it) , 
+- Another way of switch: `git checkout <branch-name>`(This also only switches the branch does not create it) , 
 - Note ➡️ git checkout  does a million additional things
 
 #### Q6:Create a new branch and directly switch to that branch in 2 different ways 
