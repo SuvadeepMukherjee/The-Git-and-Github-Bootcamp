@@ -31,7 +31,7 @@ Anki Tag : 04-adding-and-committing
 
 - check all files with `ls -a` then delete the nested `.git` folder with `rm -rf`
 
-**Q5: What is Working Directory , Staging area and Repository ? 
+**Q5:** What is Working Directory , Staging area and Repository ? 
 
 **Answer**:
 
