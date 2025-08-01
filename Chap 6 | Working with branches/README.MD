@@ -1,6 +1,6 @@
 ## Chap 6 | Working with branches 
 
-**Branches Introduction**
+## **Branches Introduction**
 
 1. When we make a commit , each commit gets a hash (a unique identifier that corresponds to the commit) and each commit references at least one parent commit
 2. Contexts: on large projects, we often work in multiple contexts
@@ -23,7 +23,7 @@
 
 
 
-**The Master Branch**:
+## **The Master Branch**:
 
 The default branch name is **master**
 
@@ -39,7 +39,7 @@ Many people designate the master branch as their "source of truth" or the "offic
 - HEAD is simply a **pointer** that refers to the **current "location"** in your repository. It points to a particular branch reference
 - Like many different bookmarks in a book, only one position can be opened at a time
 
-**Git Branch Commands**:
+## **Git Branch Commands**:
 
 1. Use `git branch` to **view** your existing branches
 2. Look for the `*` which indicates the branch you are **currently on**
@@ -52,7 +52,7 @@ Many people designate the master branch as their "source of truth" or the "offic
    - `-c` stands for create
    - `-b` stands for branch
 
-**Switching Branches with Unstaged Changes ?**
+## **Switching Branches with Unstaged Changes ?**
 
 If you switch branches with unstaged changes we will get an error if the unstaged changes are not a new file 
 
@@ -65,7 +65,7 @@ Two options:
 
 We will not get an error if the unstaged changes are not in a new file and the new file will be moved to the new branch or 
 
-**Deleting & Renaming Branches**:
+## **Deleting & Renaming Branches**:
 
 Use `git branch -d <branch-name>`
 
