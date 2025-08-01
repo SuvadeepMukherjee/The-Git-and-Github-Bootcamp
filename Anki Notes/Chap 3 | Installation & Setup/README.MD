@@ -1,4 +1,6 @@
-## Chap 3 | Installation & Setup (Anki Tag : 03-installation-and-setup)
+## Chap 3 | Installation & Setup 
+
+Anki Tag ➡️ 03-installation-and-setup
 
 **Q1**: Git command to set name and email ? 
 
@@ -33,15 +35,17 @@ git config user.email
 7. create a directory 
 8. delete a file called hello.txt
 9. delete a folder called LandTurtles 
+10. list all files including hidden files
 
 **Answer**:
 
-1. ls => list the contents of current working directory , ls folder => list the contents of a specified folder 
-2. open . => open the current folder , `open <directory>` => open a specified folder 
-3. pwd => print working directory 
-4. `cd <dir>` => change directory to dir 
-5. cd .. => move back one directory 
-6. touch app.js
-7. mkdir dir
-8. `rm hello.txt`
-9. `rm -rf LandTurtles`
+1. `ls` ➡️ list the contents of current working directory , `ls folder` ➡️ list the contents of a specified folder 
+2. `open .` ➡️ open the current folder , `open <directory>` ➡️ open a specified folder 
+3. `pwd` ➡️ print working directory 
+4. `cd <dir>` ➡️ change directory to dir 
+5. `cd ..` ➡️ move back one directory 
+6. Create a file called app.js ➡️`touch app.js`
+7. Create a folder called dir ➡️ `mkdir dir`
+8. Delete a file called hello.txt ➡️`rm hello.txt`
+9. Delete a folder called LandTurtles ➡️`rm -rf LandTurtles`
+10. List all files in the current directory ➡️ `ls -a`
