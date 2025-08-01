@@ -2,7 +2,7 @@
 
 ## Configuring Git 
 
-Check Current name and  email:  
+Set name and  email:  
 
 ```bash
 git config --global user.name "suvadeep"
@@ -10,7 +10,7 @@ git config --global user.name "suvadeep"
 git config --global user.email "suvadeepm0709@gmail.com"
 ```
 
-Set name and Email 
+Check name and Email 
 
 ```bash
 git config user.name
@@ -52,7 +52,7 @@ git config user.email
    - `rm deleteMe.docx` (Must be in the same folder)
 
 9. `rm - rf <dir>`
-   - delete a directory directory 
+   - delete a directory 
    - r =recursive , f= force 
    - `rm -rf LandTurtles`
 
