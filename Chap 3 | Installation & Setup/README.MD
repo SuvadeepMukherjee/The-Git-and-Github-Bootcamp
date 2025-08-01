@@ -1,6 +1,6 @@
-## Chap 3 | Installation & Setup 
+# Chap 3 | Installation & Setup 
 
-#### Configuring Git 
+## Configuring Git 
 
 Check Current name and  email:  
 
@@ -18,7 +18,7 @@ git config user.name
 git config user.email
 ```
 
-#### Terminal Crash Course
+## Terminal Crash Course
 
 1. ls , ls < dir>
    - list the contents of current directory
