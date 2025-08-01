@@ -2,8 +2,6 @@
 
 Anki Tag : 04-adding-and-committing
 
-### Chap 4 | The Very Basics of Git : Adding & Committing (anki tag : 04-adding-and-committing)
-
 **Q1**: What is a git repo ? 
 
 **Answer**:
@@ -59,8 +57,8 @@ add individual files from working directory to staging area with ➡️ `git add
 
 To see logs of all commits use ➡️ `git log`
 
-#### Q8:What is the command to add all modified files and commit in shortcut way ? 
+#### Q8:What is the command to commit files from the staging area to repository (inline commit message)
 
 **Answer**:
 
-`git commit -a -m "message"`
+`git commit  -m "message"`

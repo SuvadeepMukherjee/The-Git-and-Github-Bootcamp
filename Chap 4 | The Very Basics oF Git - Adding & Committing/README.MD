@@ -13,7 +13,7 @@
 ## **Git Init and Git Status**
 
 - `git status` : gives information on the current status of a git repository and its contents 
-- `git init`: creare a new git repository
+- `git init`: create a new git repository
   - Before we can do anything git-related , we must initialise a repo first
   - Do once per project , initialise the repo in the *top-level folder* containing your project 
   - Will create a hidden `.git` folder for us 
