@@ -56,3 +56,6 @@ git config user.email
    - r =recursive , f= force 
    - `rm -rf LandTurtles`
 
+10. List all files in a directory including hidden files 
+    - `ls -a`
+
