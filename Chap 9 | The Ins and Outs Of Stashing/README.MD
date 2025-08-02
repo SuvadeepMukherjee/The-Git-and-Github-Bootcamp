@@ -11,7 +11,7 @@ Stashing ➡️➡️ Git provides an easy way of stashing these uncommitted cha
 
 ## Git Stash save / pop 
 
-- git stash or git stash save help you save changes that we are not yet ready to commit .We can stash changes and then come back to them later 
+- `git stash` or `git stash save`  help you save changes that we are not yet ready to commit .We can stash changes and then come back to them later 
 - Running git stash will take all uncommitted changes (staged and unstaged) and stash them in our working directory 
 - git stash pop removes the most recently stashed changes in your stash and re-apply them in your working directory 
 
@@ -27,12 +27,14 @@ Stashing ➡️➡️ Git provides an easy way of stashing these uncommitted cha
 
 Note ➡️  ➡️ WIP(work in progress) on <branch> : <most-recent-commit-hash> <most recent commit message>
 
-Applying Specific Stashes: 
+## Applying Specific Stashes: 
 
 - git assumes we want to apply the most recent stash when we run `git stash apply` but we can also specify a particular stash like `git stash apply stash@{2}`
 
 ## Dropping and Clearing the stash 
 
-- To delete a particular stash use the following command ![drop-stash](../Assets/drop-stash.png)
+- To delete a particular stash use the following command `git stash drop <stash@id>`
 
-Example ➡️ git stash drop "stash@{2}"
+Example ➡️ git stash drop stash@{2}
+
+- To clear out all stashes, run `git stash clear`
