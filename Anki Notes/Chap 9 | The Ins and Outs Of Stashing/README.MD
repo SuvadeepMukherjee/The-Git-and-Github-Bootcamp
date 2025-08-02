@@ -34,7 +34,7 @@ Stashing ➡️➡️ Git provides an easy way of stashing these uncommitted cha
 - We can add multiple stashes onto the stack of stashes .They will all be stashed in the order you added them ➡️ stack!
 - Viewing stashes ➡️ use `git stash list`![git-stash-list](../../Assets/git-stash-list.png)
 
-Note ➡️ WIP(work in progress) on <branch> : <most-recent-commit-hash> <most recent commit message>
+Note ➡️ WIP(work in progress) on branch : most-recent-commit-hash most recent commit message
 
 #### Q5:How to apply a specific stash ? 
 
@@ -52,6 +52,4 @@ git stash clear
 
 **Answer**:
 
-![drop-stash](../../Assets/drop-stash.png)
-
-Example ➡️ `git stash drop "stash@{2}"`
+Example ➡️ `git stash drop stash@{2}`

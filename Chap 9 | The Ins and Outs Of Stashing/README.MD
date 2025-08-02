@@ -25,7 +25,7 @@ Stashing ➡️➡️ Git provides an easy way of stashing these uncommitted cha
 - We can add multiple stashes onto the stack of stashes .They will all be stashed away in the order we added them 
 - Viewing stashes : `git stash list`![git-stash-list](../Assets/git-stash-list.png)
 
-Note ➡️  ➡️ WIP(work in progress) on <branch> : <most-recent-commit-hash> <most recent commit message>
+Note ➡️  ➡️ WIP(work in progress) on branch : most-recent-commit-hash most recent commit message
 
 ## Applying Specific Stashes: 
 
