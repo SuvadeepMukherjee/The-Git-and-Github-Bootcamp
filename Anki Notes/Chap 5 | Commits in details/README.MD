@@ -40,7 +40,7 @@ git add forgotten_file (Add to staging area)
 git commit --amend
 ```
 
- Note ➡️ We have to write the new commit message in Vim
+ Note ➡️ We have to write the new commit message in Vim. In Vim we will enter the new commit message , in vim the previous commit message i.e some commit in this case will be there we will write the new commit message by editing the previous commit message  
 
 #### Q5:What is the command to exit git log and git log --oneline ? 
 
