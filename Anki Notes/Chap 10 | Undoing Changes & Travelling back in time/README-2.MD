@@ -22,4 +22,4 @@ Note ➡️ This will put us in detached HEAD
 git checkout d8194d6
 ```
 
-![zzzzz-detached-head-2](../../assets/zzzzz-detached-head-2.png)
+![zzzzz-detached-head-2](../../Assets/zzzzz-detached-head-2.png)
