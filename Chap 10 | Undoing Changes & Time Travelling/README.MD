@@ -25,7 +25,7 @@
 
 - What to do when having a detached head?
   - Stay in detached HEAD to **examine the contents** of the old commit. Poke around, view the files, etc
-  - Leave and switch back to wherever you were before using `git switch <branch-name>` or `git switch -` - **reattach the HEAD**
+  - Leave and switch back to wherever you were before using  `git switch -` or move back to a particular branch using `git switch branch-name` - **reattach the HEAD**
   - **Create a new branch** and switch to it. You can now make and save changes, since HEAD is no longer detached
 
 ## Referencing Commits Relative to HEAD 

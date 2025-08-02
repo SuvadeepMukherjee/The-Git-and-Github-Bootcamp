@@ -1,5 +1,7 @@
 # Chap 10 | Undoing Changes & Travelling back in time
 
+Anki ➡️ 10-undoing-changes-and-travelling-back-in-time
+
 #### Q1:How can we view the contents of an old commit , poke around , view the files etc ? 
 
 **Answer**:
@@ -23,3 +25,40 @@ git checkout d8194d6
 ```
 
 ![zzzzz-detached-head-2](../../Assets/zzzzz-detached-head-2.png)
+
+#### Q3:How to reattach HEAD ? 
+
+**Solution**:
+
+- We can stay in detached HEAD to examine the contents of the old commit , poke around , view the files etc 
+- Leave and switch back to wherever you were using `git switch -` or `git switch branch-name` - reattach the HEAD
+- Create a new branch and switch to it . We can now make and save changes since HEAD is no longer detached
+
+#### Q4:How can we go N commits beyond the HEAD examine the contents of the old commit , poke around , view the files etc ? 
+
+**Solution**:
+
+- git checkout supports a slightly odd syntax for referencing commits to a particulat commit 
+- HEAD~1 refers to the commit before HEAD (parent)
+- HEAD~2 refers to 2 commits before HEAD (grandparent)
+
+Full command : `git checkout HEAD~N`
+
+#### Q5:Suppose you have made some changes to a file since your last commit . You have saved the file and then realize you definately do not want those changes . How can we restore the file to the contents of the last commit ? 
+
+**Solution**:
+
+`git restore file`
+
+Example : `git restore index.js`
+
+####  Q6:Suppose you have made a couple of commits on the master branch but you actually meant to make them on a seperate branch instead 
+
+- How will you reset the repo back to a specific commit (the commits are gone)
+- You want to undo both the commits and the actual changes in your files 
+
+**Solution**:
+
+A ➡️ ` git reset commit-hash`
+
+B ➡️ `git reset --hard commit-hash`
