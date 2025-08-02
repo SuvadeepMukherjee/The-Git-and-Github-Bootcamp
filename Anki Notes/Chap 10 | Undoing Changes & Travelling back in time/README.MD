@@ -61,14 +61,14 @@ Note ➡️ We will be in detached HEAD
 
 ![03-git-checkout](../../Assets/03-git-checkout.png)
 
-#### Q6:Suppose you have made some changes to a file but dont want to keep them i.e to revert the file back to whatever it looked like when you last committed . What are the 2 ways of achieving it ? 
+#### Q6:Suppose you have made some changes to a file but dont want to keep them i.e to revert the file back to whatever it looked like when you last committed . What are the 2 ways of achieving it using git checkout ?  
 
 **Answer**:
 
 - `git checkout HEAD <file>` for example `git checkout HEAD index.js`
 - `git checkout -- <file>` for example  `git checkout -- index.js`
 
-#### Q7:Suppose you have made some changes to a file since your last commit .You have saved the file but then realize you do not want those changes anymore 
+#### Q7:Suppose you have made some changes to a file since your last commit .You have saved the file but then realize you do not want those changes anymore (You have to use git restore)
 
 #### 1. Restore the file (home.html) to the contents in the HEAD 
 

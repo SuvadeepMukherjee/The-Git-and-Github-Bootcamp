@@ -33,6 +33,7 @@
 - git checkout supports a slightly odd syntax for referencing previous commits relative to a particular commit 
   - HEAD ~ 1 refers to the commit before HEAD (parent)
   - HEAD ~ 2 refers to 2 commits before HEAD (grandparent)
+  - Command : `git checkout HEAD~2`
 
 ![02-git-checkout](../Assets/02-git-checkout.png)
 
