@@ -13,15 +13,11 @@ Anki Tag : 07-merging-branches
 
 **Answer**:
 
--  A Fast-Forward merge occur when there is a linear path from the current branch tip to the target branch , instead of actually merging the branches , all git has to do to integrate the histories is move (i,e fast forward) the current tip up to the target branch tip 
+-  A Fast-Forward merge occur when there is a linear path from the current branch tip to the target branch , instead of actually merging the branches , all git has to do to integrate the histories is move (i,e fast forward) the current tip up to the target branch tip ![FF-1](../../Assets/FF-1.png)
 
-  ```bash
-  #For example , merge the bugfix branch into master
-  
-   git switch master
-  
-  git merge bugfix 
-  ```
+  ![FF-2](../../Assets/FF-2.png) 
+
+​	![FF-3](../../Assets/FF-3.png)	
 
 #### Q3:What are the various types of Merges ? 
 
