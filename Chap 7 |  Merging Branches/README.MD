@@ -65,6 +65,6 @@ Actually it looks like this , this is called a fast-forward
 
 - Resolving conflicts 
   - Open up the file(s) with merge conflicts
-  - Edit the file(s) to remove the conflicts.Decide which branch's content you want to keep in each conflict.Or keep the content from both 
+  - Edit the file(s) to remove the conflicts.Decide which branch's content you want to keep in each conflict or keep the content from both 
   - Remove the conflict "markers" in the document
   - Add your changes and then make a commit! 
