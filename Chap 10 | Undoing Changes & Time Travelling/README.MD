@@ -82,7 +82,7 @@ Select your source instead of HEAD
 
 ![y-reset-hard-2](../Assets/y-reset-hard-2.png)
 
-#### Q12:What is the difference between git reset and git revert ? 
+## What is the difference between git reset and git revert ? 
 
 **Answer**:
 
