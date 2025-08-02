@@ -54,7 +54,7 @@ Many people designate the master branch as their "source of truth" or the "offic
 
 ## **Switching Branches with Unstaged Changes ?**
 
-If you switch branches with unstaged changes we will get an error if the unstaged changes are not a new file 
+If you switch branches with unstaged changes we will get an error if the unstaged changes are not a new file (there are  conflicts)
 
 ![uncommitted-changes](../Assets/uncommitted-changes.png)
 
@@ -63,7 +63,7 @@ Two options:
 - commit it 
 - stash it 
 
-We will not get an error if the unstaged changes are  in a new file and the new file will be moved to the new branch  
+We will not get an error if the unstaged changes are  in a new file(if no conflicts) and the new file will be moved to the new branch  
 
 ## **Deleting & Renaming Branches**:
 

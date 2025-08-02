@@ -51,14 +51,14 @@ Create and switch to a branch **at the same time**: `git switch -c <branch-name>
 
 **Answer**:
 
-- If you switch branches with unstaged changes we will get an error if the unstaged changes are not a new file 
+- If you switch branches with unstaged changes we will get an error if the unstaged changes are not a new file(there are conflicts between the branches) 
 
 - Two options of fixing the error
 
   - commit it 
   - stash it 
 
-  We will not get an error if the unstaged changes are  in a new file and the new file will be moved to the new branch 
+  We will not get an error if the unstaged changes are  in a new file(there are no conflicts between the branches) and the new file will be moved to the new branch 
 
 #### Q8:What is the command to delete a branch ? 
 
