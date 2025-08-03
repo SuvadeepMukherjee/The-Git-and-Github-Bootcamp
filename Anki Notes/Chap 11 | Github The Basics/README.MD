@@ -29,6 +29,7 @@ Note ➡️ `git clone <url>` will clone any hosted repo not just hosted on GitH
 - Create a new repo on Github 
 - Connect your local repo(add a remote)
   - `git remote add <name> <URL>`
+  - Example ➡️ git remote add origin https://github.com/SuvadeepMukherjee/ANKI-BACKUP-2
 - Push up your changes to Github
 
 #### Q4:Create a github repo (you havent begun work on your local repo)
@@ -60,9 +61,9 @@ Note ➡️ `git clone <url>` will clone any hosted repo not just hosted on GitH
 
 **Answer**:
 
-- This tells git, anytime I use the name "origin", I'm **referring** to this particular Github repo URL
 - Origin is a **conventional Git remote name**, but it is not at all special. It's just a name for a URL
 - When we clone a Github repo, the default remote name setup for us is called origin. You can change it. Most people leave it
+- This tells git, anytime i use the name "origin", I'm **referring** to this particular Github repo URL
 
 #### Q8:What is the command to remove a remote ? 
 
@@ -76,27 +77,17 @@ Note ➡️ `git clone <url>` will clone any hosted repo not just hosted on GitH
 
 `git remote rename <old> <new>`
 
-#### Q10:What does the following command do ? 
-
-`git push origin master`
+#### Q10:What is the command to push the local master branch to a remote (say origin)
 
 **Answer**:
+
+`git push origin master`	
 
 It pushes the local master branch to a remote (by convention origin) master branch
 
 Note ➡️ If the master branch does not exist on the remote (origin by convention) it will create it 
 
-#### Q11:While we often want to push a local branch of the same name , we dont have to. 
-
-We can use ______ to push a local branch up to a remote branch of different name 
-
-**Answer**:
-
-`git push <remote> <local-branch>:<remote-branch>` to push a local branch of different name 
-
-For example `git push origin pancake:waffle` pushes our local pancake branch up to a remote branch called waffle
-
-#### Q12:What does the word -u signify in the command `git push -u origin main`
+#### Q11:What does the word -u signify in the command `git push -u origin main`
 
 **Answer**:
 
@@ -118,16 +109,16 @@ For example `git push origin pancake:waffle` pushes our local pancake branch up 
 
   
 
-#### Q13:Whats the difference between main and master ? 
+#### Q12:Whats the difference between main and master ? 
 
 **Answer**:
 
-1. [Why GitHub renamed its master branch to main](https://www.theserverside.com/feature/Why-GitHub-renamed-its-master-branch-to-main)
+1. The official name in git for the default branch is master while the official name of the default branch in Github is main 
 2. If you start your project from scratch by creating a repo on Github and clone it to your local machine, the default branch will be `main` and need no further changes
 3. However, if you have your local repo with `master` as default branch, and want to change that branch name corresponds to Github's standard
    - Use `git branch -M main`
 
-#### Q14:How to change name of branch from master to main ? 
+#### Q13:How to change name of branch from master to main ? 
 
 **Answer**:
 
