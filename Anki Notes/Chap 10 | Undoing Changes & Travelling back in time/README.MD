@@ -1,127 +1,84 @@
-# Chap 10 | Undoing Changes & Travelling back in time 
+# Chap 10 | Undoing Changes & Travelling back in time
 
 Anki ➡️ 10-undoing-changes-and-travelling-back-in-time
 
-#### Q1:What we can do in detached Head ? 
+#### Q1:How can we view the contents of an old commit , poke around , view the files etc ? 
 
 **Answer**:
 
-- We can examine the contents of the old commit , poke around , view the files etc 
+- `git log --oneline`
+- `git checkout commit-hash`
 
-#### Q2:How to reattach detached HEAD ? 
+Note ➡️ This will put us in detached HEAD
 
-**Answer**:
-
-- Leave and switch back to wherever you were using `git switch -` or move to a particular branch using `git switch <branch_name>`
-- Create a new branch and switch to it .You can now make and save changes since HEAD is no longer detached
-
-#### Q3:How can we view a particular commit ? 
+#### Q2:What is detached HEAD ? 
 
 **Answer**:
 
-- `git log --oneline` ➡️ Get the commit hash(First 7 digits)
-- `git checkout <commit-hash>` (First 7 digits)
-
-Note ➡️ We will be in detached HEAD in this state 
-
-#### Q4:What is detached HEAD ? 
-
-**Answer**:
-
-- Usually HEAD points to a specific branch reference rather than a particular commit 
-  - HEAD is a pointer to the current branch reference 
-  - The branch reference is a pointer to the last commit made on a particular branch ![01-head](../../Assets/01-head.png)  
-
-Detached HEAD ➡️ 
+- HEAD is a pointer to the current branch reference 
+- The branch reference is a pointer to the last commit made on a particular branch![zzzz-detached-head-1](../../Assets/zzzz-detached-head-1.png)
 
 - When we checkout a particular commit , HEAD points at that commit rather than at the branch pointer 
 
-  ```bash
-  git checkout d8194d6
-  ```
-
-  ![01-detached-head](../../Assets/01-detached-head.png)
-
-
-
-#### Q5:How to view the nth commit beyond HEAD ? 
-
-**Answer**:
-
 ```bash
-git checkout HEAD~n
+git checkout d8194d6	
 ```
 
-Example ➡️ `git checkout HEAD~2`
+![zzzzz-detached-head-2](../../Assets/zzzzz-detached-head-2.png)
 
-Note ➡️ We will be in detached HEAD
+#### Q3:How to reattach HEAD ? 
 
-- HEAD ~ 1 refers to the commit before HEAD (parent)
-- HEAD ~ 2 refers to 2 commits before HEAD (grandparent)
+**Solution**:
 
-![03-git-checkout](../../Assets/03-git-checkout.png)
+- We can stay in detached HEAD to examine the contents of the old commit , poke around , view the files etc 
+- Leave and switch back to wherever you were using `git switch -` or `git switch branch-name` - reattach the HEAD
+- Create a new branch and switch to it . We can now make and save changes since HEAD is no longer detached
 
-#### Q6:Suppose you have made some changes to a file but dont want to keep them i.e to revert the file back to whatever it looked like when you last committed . What are the 2 ways of achieving it using git checkout ?  
+#### Q4:How can we go N commits beyond the HEAD examine the contents of the old commit , poke around , view the files etc ? 
 
-**Answer**:
+**Solution**:
 
-- `git checkout HEAD <file>` for example `git checkout HEAD index.js`
-- `git checkout -- <file>` for example  `git checkout -- index.js`
+- git checkout supports a slightly odd syntax for referencing commits to a particulat commit 
+- HEAD~1 refers to the commit before HEAD (parent)
+- HEAD~2 refers to 2 commits before HEAD (grandparent)
 
-#### Q7:Suppose you have made some changes to a file since your last commit .You have saved the file but then realize you do not want those changes anymore (You have to use git restore)
+Full command : `git checkout HEAD~N`
 
-#### 1. Restore the file (home.html) to the contents in the HEAD 
+#### Q5:Suppose you have made some changes to a file since your last commit . You have saved the file and then realize you definately do not want those changes . How can we restore the file to the contents of the last commit ? 
 
-#### 2.Restore the contents of the file(home.html) to its state 2 commits prior to HEAD 
+**Solution**:
 
-**Answer**:
+`git restore file`
 
-1. `git restore home.html`
-2. `git restore --source HEAD~2 home.html`
+Example : `git restore index.js`
 
-Note ➡️ `git restore <file-name>` restores using HEAD as the default source , but we can change that using the --source option .For example , `git restore HEAD ~ 2 home.html` : restores the contents of home.html to its state 2 commits prior to HEAD
+####  Q6:Suppose you have made a couple of commits on the master branch but you actually meant to make them on a seperate branch instead 
 
-#### Q8:You have accidentally added a file to your staging area and you dont wish to include it in the next commit , How to remove it from the staging area ? 
+- How will you reset the repo back to a specific commit (the commits are gone)
+- You want to undo both the commits and the actual changes in your files 
 
-**Answer**:
+**Solution**:
 
-- If you have accidentally added a file to your staging area with git add and you dont wish to include it in the next commit you can use git restore to remove it from staging
-- Use the -- staged option : `git restore --staged app.js`
+A ➡️ ` git reset commit-hash`
 
-#### Q9:You just made couple of commits on the master branch but you actually meant to make them on a seperate branch instead 
+B ➡️ `git reset --hard commit-hash`
 
-#### How can you keep that work but move it onto another branch ? 
+#### Q7:How to do git revert ? 
 
-**Answer**:
+**Solution**:
 
-- Get the first 7 digits commit has with git log --oneline 
-- `git reset <first-7-digits-hash>` 
-  - Git will go back to that specified commit and delete the commits after that commit , but the changes you made in that commit will still remain 
-  - Create a new branch or switch to that branch 
+- `git log --oneline`
+- `git revert commit-hash`
 
-#### Q10:What is the git command to remove both the commits and also the actual changes in your files ? 
+#### Q8:What is the difference between git revert and git reset ? 
 
-**Answer**:
-
-- `git reset --hard <commit-hash>`
-- This will remove both the files and the commits 
-
-#### Q11:How to do git revert ? 
-
-**Answer**:
-
-- `git log --oneline` ➡️ Get First 7 digits commit hash 
-- `git revert <commit-hash>`
-
-Note ➡️ Because it results in a new commit you will be prompted to enter a commit message in VIM 
-
-#### Q12:What is the difference between git reset and git revert ? 
+**Solution**:
 
 **Answer**:
 
 - `git revert` is similar to `git reset` in that they both "undo" changes, but they accomplish it in different ways
 
-  - `git reset` actually **moves the branch pointer backwards**, eliminating commits![git-reset](../../Assets/git-reset.png)
+  - `git reset` actually **moves the branch pointer backwards**, eliminating commits![git-reset](/Users/suvadeep/Desktop/The Git and Github Bootcamp/Assets/git-reset.png)
 
   - `git revert` instead **creates a brand new commit** which reverses/undos the changes from a commit. Because it results in a new commit, you will be prompted to enter a commit message![git-revert](../../Assets/git-revert.png)
 
