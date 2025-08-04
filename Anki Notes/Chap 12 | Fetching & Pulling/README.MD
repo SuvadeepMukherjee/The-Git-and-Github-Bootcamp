@@ -78,7 +78,7 @@ Note ➡️ `git switch <remote-branch-name>` creates a local branch from the re
 
 Note ➡️It also updates remote tracking branches of that remote 
 
-`git fetch` ➡️ Fetches branches and history from the default remote repository (origin)
+`git fetch` ➡️ Fetches branches and history from the default remote (origin)
 
 Note ➡️ It also updates all the remote tracking branches  
 
@@ -88,13 +88,13 @@ Note ➡️ It also updates all the remote tracking branches
 
 `git fetch` ➡️ update all the remote tracking branches 
 
-#### Q8:What does the following command do ?
+#### Q8:What is the  command to fetch the latest information from origin(remote) main(branch) and merge those changes into our current branch  ?
 
-`git pull <remote> <branch>` 
+
 
 **Solution**:
 
-- git pull <remote> <branch> would fetch the latest information from the remote's (say origin) branch (say main) and merge those changes into our current branch 
+- git pull origin mian would fetch the latest information from the remote's  origin) branch ( main) and merge those changes into our current branch 
 
 Note ➡️ It matters WHERE  we run this command from .Whatever branch we run it from is where the changes will be merged into 
 
@@ -108,4 +108,4 @@ If we run git pull without specifying a particular remote or branch , git assume
 
 - remote will default to origin
 
-- branch will default to whatever tracking condition is configured for your current codition
+- branch will default to whatever tracking condition is configured for your current condition
