@@ -31,7 +31,7 @@ When we clone a repo to our local machine from Github, we'll have two branch ref
 
 **Answer**:
 
-- We can checkout on these remote branch pointers using `git checkout origin/master`
+- We can checkout on  remote branch pointers using `git checkout origin/master , ``git checkout origin/puppies` etc  
 
 Note ➡️ This will put us in detached HEAD
 
@@ -49,7 +49,7 @@ Note ➡️ This will put us in detached HEAD
 
 - To have our own local branch called puppies and connected to origin/puppies just like my local master branch is connected to origin/master we have to run `git switch puppies`
 
-Note ➡️ `git switch <remote-branch-name>` creates a local branch from the remote branch of the same name AND sets it up to track the remote branch origin/<remote-branch-name> 
+Note ➡️ `git switch <remote-branch-name>` creates a local branch from the remote branch of the same name AND sets it up to track the remote branch origin/remote-branch-name
 
 ![z-local-remote-tracking-2](../../Assets/z-local-remote-tracking-2.png)
 
