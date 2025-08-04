@@ -27,7 +27,7 @@ When we clone a repo to our local machine from Github, we'll have two branch ref
 
 `git branch -r`
 
-#### Q3:How can we checkout on these remote branch pointers ?
+#### Q3:How can we checkout on  remote branch pointers ?
 
 **Answer**:
 
