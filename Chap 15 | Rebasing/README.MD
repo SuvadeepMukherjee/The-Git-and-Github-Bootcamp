@@ -16,3 +16,37 @@ There are two main ways to use the `git rebase` command
 
 - Rebasing rewrites history by *creating new commits* for each of the original feature branches
 - We can also wait until we are done with a feature and then rebase the feature branch onto the master branch![00REBASING](../Assets/00REBASING.png)
+
+## Git Rebase 
+
+Command 
+
+```bash
+# make sure you are at your feat branch
+
+git switch feat
+
+git rebase master 
+```
+
+- We already have tons of merge from master into feature branch but we want to cleanup the structure 
+- we just want to have new changes from master to our feature branch without previous merging
+- new commits are made on the feature branch on top of the master branch's tip (the master branch is unaffected)![00REBASING](../Assets/00REBASING.png)
+
+## The Golden rule of Rebase 
+
+**NEVER** rebase commits that have been **shared with others**
+
+If you have already pushed commits up to Github, DO NOT rebase them unless you are positive no one on the team is using those commits
+
+You do not want to rewrite any git history that other people already have. It's **a pain to reconcile the alternate histories**
+
+- Since you have commits that don't even exist in other's history, and they have commits that don't exist in yours (since you've rebased!)
+
+## Handling Conflicts & Rebasing
+
+1. Resolve the conflict in your files
+2. `git add <conflicted-files>` to mark them as resolved
+3. run `git rebase --continue`
+
+Just follow the bash instruction if you forget what to do
