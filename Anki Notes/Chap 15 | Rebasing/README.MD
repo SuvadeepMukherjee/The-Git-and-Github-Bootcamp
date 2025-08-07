@@ -47,4 +47,4 @@ git rebase master
 2. `git add <conflicted-files>` to mark them as resolved
 3. run `git rebase --continue`
 
-Just follow the bash instruction if you forget what to do
+Just follow the bash instruction if you forget what to do . 
