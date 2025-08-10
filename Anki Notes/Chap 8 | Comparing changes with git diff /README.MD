@@ -10,8 +10,6 @@ Anki ➡️ 08-comparing-changes-with-git-diff
 
 #### Q2: Read the diff 
 
-![git-diff-1](../../Assets/git-diff-1.png)
-
 ![git-diff-2](../../Assets/git-diff-2.png)
 
 **Solution**:
@@ -33,6 +31,8 @@ Anki ➡️ 08-comparing-changes-with-git-diff
 - Changes: Every line that changed between the two files is marked with either a + or - symbol
   - Lines that begin with - come from file A
   - Lines that begin with + come from file B
+
+![git-diff-1](../../Assets/git-diff-1.png)
 
 #### Q3:Write the following git commands 
 
