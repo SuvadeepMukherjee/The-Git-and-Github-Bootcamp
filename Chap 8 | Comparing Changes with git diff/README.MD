@@ -54,3 +54,19 @@ blue
 - Changes: Every line that changed between the two files is marked with either a + or - symbol
   - Lines that begin with - come from file A
   - Lines that begin with + come from file B
+
+## Viewing Unstaged Changes
+
+- `git diff` without additional options 
+  - Compares **staging Area and working Directory** 
+  - Lists all the changes in our working directory that are **NOT staged** for the next commit
+
+## Viewing Working Directory Changes
+
+- `git diff HEAD` lists all changes in the working tree since your last commit
+  - Includes all staged and unstaged changes 
+
+## Viewing Staged Changes
+
+`git diff --staged` will list the changes between the staging area and our last commit
+
