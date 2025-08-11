@@ -2,7 +2,7 @@
 
 Anki ➡️ 10-undoing-changes-and-travelling-back-in-time
 
-#### Q1:How can we view the contents of an old commit , poke around , view the files etc ? ✅
+#### Q1:How can we view the contents of an old commit , poke around , view the files etc ? 
 
 **Answer**:
 
@@ -11,7 +11,7 @@ Anki ➡️ 10-undoing-changes-and-travelling-back-in-time
 
 Note ➡️ This will put us in detached HEAD
 
-#### Q2:What is detached HEAD ? ✅
+#### Q2:What is detached HEAD ? 
 
 **Answer**:
 
@@ -26,7 +26,7 @@ git checkout d8194d6
 
 ![zzzzz-detached-head-2](../../Assets/zzzzz-detached-head-2.png)
 
-#### Q3:How to reattach detached HEAD ? ✅
+#### Q3:How to reattach detached HEAD ? 
 
 **Solution**:
 
@@ -34,17 +34,7 @@ git checkout d8194d6
 - Leave and switch back to wherever you were using `git switch -` or `git switch branch-name` - reattach the HEAD
 - Create a new branch and switch to it . We can now make and save changes since HEAD is no longer detached
 
-#### Q4:How can we go N commits beyond the HEAD examine the contents of the old commit , poke around , view the files etc ? ✅
-
-**Solution**:
-
-- git checkout supports a slightly odd syntax for referencing commits to a particulat commit 
-- HEAD~1 refers to the commit before HEAD (parent)
-- HEAD~2 refers to 2 commits before HEAD (grandparent)
-
-Full command : `git checkout HEAD~N`
-
-#### Q5:Suppose you have made some changes to a file since your last commit . You have saved the file and then realize you definately do not want those changes . How can we restore the file to the contents of the last commit ? ✅
+#### Q4:Suppose you have made some changes to a file since your last commit . You have saved the file and then realize you definately do not want those changes . How can we restore the file to the contents of the last commit ? 
 
 **Solution**:
 
@@ -52,18 +42,34 @@ Full command : `git checkout HEAD~N`
 
 Example : `git restore index.js`
 
-####  Q6:Suppose you have made a couple of commits on the master branch but you actually meant to make them on a seperate branch instead ✅
+Note ➡️  ⬇️
 
-- How will you reset the repo back to a specific commit (the commits are gone)
+res**t**ore ➡️ the ultimate Control + Z
+
+res**e**t ➡️ event horizon (going back in time)
+
+re**v**ert ➡️ very good(as we should use git revert in place of git reset when sharing ) 
+
+####  Q5:Suppose you have made a couple of commits on the master branch but you actually meant to make them on a seperate branch instead 
+
+- How will you reset the repo back to a specific commit (only the commits are gone)
 - You want to undo both the commits and the actual changes in your files 
 
 **Solution**:
 
-A ➡️ ` git reset commit-hash`
+Reset the repo back to a specific commit (only the commits are gone) ➡️ ` git reset commit-hash`
 
-B ➡️ `git reset --hard commit-hash`
+Undo both the commits and the actual changes in your files ➡️ `git reset --hard commit-hash`
 
-#### Q7:How to do git revert ? ✅
+Note ➡️  ⬇️
+
+res**t**ore ➡️ the ultimate Control + Z
+
+res**e**t ➡️ event horizon (going back in time) 
+
+re**v**ert ➡️ very good(as we should use git revert in place of git reset when sharing ) 
+
+#### Q6:How to do git revert ? 
 
 **Solution**:
 
@@ -71,7 +77,15 @@ B ➡️ `git reset --hard commit-hash`
 - `git revert commit-hash`
 - Fix the merges and then commit
 
-#### Q8:What is the difference between git revert and git reset ? 
+Note ➡️  ⬇️
+
+res**t**ore ➡️ the ultimate Control + Z
+
+res**e**t ➡️ event horizon (going back in time)
+
+re**v**ert ➡️ very good(as we should use git revert in place of git reset when sharing ) 
+
+#### Q7:What is the difference between git revert and git reset ? 
 
 **Solution**:
 
@@ -83,13 +97,44 @@ B ➡️ `git reset --hard commit-hash`
 
   - `git revert` instead **creates a brand new commit** which reverses/undos the changes from a commit. Because it results in a new commit, you will be prompted to enter a commit message![git-revert](../../Assets/git-revert.png)
 
-- Which one should i use ? 
-  - Both `git reset` and `git revert` help us reverse changes, but there is a significant difference when it comes to **collaboration**
-  - If you want to reverse some commits that **other people already have on their machines**, you should use **revert**
-  - If you want to reverse commits that you **haven't shared with others**, use **reset** and no one will ever know
+  Note ➡️  ⬇️
+
+  res**t**ore ➡️ the ultimate Control + Z
+
+  res**e**t ➡️ event horizon (going back in time)
+
+  re**v**ert ➡️ very good(as we should use git revert in place of git reset when sharing ) 
+
+  
+
+**Q8: Which one should i use between git reset and git reset  ?**
+
+**Solution**: 
+
+- Both `git reset` and `git revert` help us reverse changes, but there is a significant difference when it comes to **collaboration**
+- If you want to reverse some commits that **other people already have on their machines**, you should use **revert**
+- If you want to reverse commits that you **haven't shared with others**, use **reset** and no one will ever know
+
+Note ➡️  ⬇️
+
+res**t**ore ➡️ the ultimate Control + Z
+
+res**e**t ➡️ event horizon (going back in time)
+
+re**v**ert ➡️ very good(as we should use git revert in place of git reset when sharing ) 
+
+
 
 #### Q9:You have accidentally added a file to your staging area with git add and you dont wish to include it in the last commit , How to remove it from staging ? 
 
 **Solution**:
 
 `git restore --staged app.js`
+
+Note ➡️  ⬇️
+
+res**t**ore ➡️ the ultimate Control + Z
+
+res**e**t ➡️ event horizon (going back in time)
+
+re**v**ert ➡️ very good(as we should use git revert in place of git reset when sharing ) 

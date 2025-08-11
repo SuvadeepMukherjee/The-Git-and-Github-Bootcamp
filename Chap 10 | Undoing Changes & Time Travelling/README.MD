@@ -4,7 +4,7 @@
 
 - The `git checkout` command is like a Git Swiss Army knife. Many developers think it is overloaded, which is what lead to the addition of the `git switch` and `git restore` commands
 - We can use `git checkout` to create branches, switch to new branches, restore files, and undo history
-- `git checkout <commit-hash>` to view a previous commit
+- `git checkout <commit-hash>` to view a particular commit
 - You'll see the following message, **Detached HEAD** state:![detached-head-message](../Assets/detached-head-message.png)
 
 - Usually, **HEAD** points to a specific **branch reference** rather than a particular commit
