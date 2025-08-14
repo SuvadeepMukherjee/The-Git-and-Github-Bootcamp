@@ -51,7 +51,7 @@
 
 - Git Fetch commands
   
-  - git fetch <remote>: fetches branches and history from a specific remote repository. It only updates remote tracking branches
+  - git fetch <remote>: fetches branches and history from a specific remote repository. It also updates remote tracking branches
     
     - e.g., `git fetch origin`
     

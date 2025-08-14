@@ -10,10 +10,9 @@ When we clone a repo to our local machine from Github, we'll have two branch ref
 
 - **Regular branch reference**: which we can move around
 
-- **Remote Tracking Branch**: a reference to **the state of the master branch on the remote**. I can't move this myself
+- **Remote Tracking Branch**: a reference to **the state of a particular branch on the remote**. We can't move this myself
+  - It's like a bookmark pointing to the last known commit on that particular branch on the remote(say origin)![zz-remote-tracking-branch](../../Assets/zz-remote-tracking-branch.png)
   
-  - It's like a bookmark pointing to the last known commit on the master branch on origin![zz-remote-tracking-branch](../../Assets/zz-remote-tracking-branch.png)
-
 - At the time you last communicated with this remote repository, here is where x branch was pointing
 
 - They follow this pattern `<remote>/<branch>`
@@ -31,7 +30,7 @@ When we clone a repo to our local machine from Github, we'll have two branch ref
 
 **Answer**:
 
-- We can checkout on  remote branch pointers using `git checkout origin/master , ``git checkout origin/puppies` etc  
+- We can checkout on  remote branch pointers using `git checkout origin/master , `git checkout origin/puppies` etc  
 
 Note ➡️ This will put us in detached HEAD
 
