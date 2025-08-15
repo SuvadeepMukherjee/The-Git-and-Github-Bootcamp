@@ -27,4 +27,56 @@
 - Option to merge to master branch
   - Merge at will, without any sort of discussion with teammates
   - Discuss with your team if the changes should be merged in
-  - Pull Requests
+  - Pull Requests(Most Common)
+
+## Pull Request 
+
+Pull Requests are a feature built in to products like Github & Bitbucket. They are **not native to Git itself**
+
+- They allow developers to **alert team-members to a new work** that needs to be reviewed
+- They provide a mechanism to **approve or reject** the work on a given branch
+- They also help facilitate **discussion and feedback** on the specified commits
+- "I have this new stuff I want to merge in to the master branch…what do you all think about it?"
+
+The workflow
+
+- Do some work locally on a feature branch
+- Push up the feature branch to Github
+- Open a pull request using the feature branch just pushed up to Github ![PR-1](../Assets/PR-1.png)
+
+- Wait for the pull request to be approved and merged .Start a discussion on the pull request .This part depends on the team structure![PR-2](../Assets/PR-2.png)
+
+Pull request recap 
+
+- Pull requests are a fancy way of requesting changes **from one branch be merged into another branch**
+
+- Tools like Github & Bitbucket allow us to generate pull requests via an online interface. Team members can then view the changes and decide to merge them in or reject them.
+
+- PR's also provide a place to discuss the changes and provide feedback
+
+## Merging Pull Requests with Conflicts
+
+- Just like any other merge, sometimes there are **conflicts** that need to be resolved when merging a pull request
+
+- You can perform the merge and fix the conflicts on the **command line** like normal, or you can use **Github's interactive editor**
+
+- To resolve the conflict locally:
+
+  - Switch to the branch in question. Merge in master and resolve the conflicts
+
+  ```bash
+  git fetch origin 
+  git switch my-new-feature 
+  git merge master 
+  # fix conflicts!
+  ```
+
+  - Switch to master. Merge in the feature branch (now with no conflicts). Push changes up to Github
+
+  - ```bash
+    git switch master 
+    git merge my-new-feature
+    git push origin master
+    ```
+
+- Configure the branch such that we cant merge into it 
