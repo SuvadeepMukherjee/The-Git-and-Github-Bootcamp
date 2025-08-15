@@ -80,3 +80,44 @@ Pull request recap
     ```
 
 - Configure the branch such that we cant merge into it 
+
+## Fork & Clone Workflow 
+
+- Instead of just one centralized Github repository, **every developer has their own Github repository** in addition to the **"main" repo**
+
+- Developers make changes and push to **their own forks** before making pull requests
+
+- It's very commonly used on large open-source projects where there may be thousands of contributors with only a couple maintainers
+
+- Forking
+
+  - Github (and similar tools) allow us to create personal copies of other peoples' repositories
+  - We call those copies a **"fork"** of the original![FC-1](../Assets/FC-1.png)
+
+  - When we fork a repo, we're basically asking Github "Make me my own copy of this repo on my Github please"
+  - As with pull requests, forking is not a Git feature. The ability to fork is implemented by Github
+
+- After forking?
+
+  - I can clone my fork and make changes, add features, and break things without fear of disturbing the original repository![FC-2](../Assets/FC-2.png)
+
+  - If I do want to share my work, I can make a **pull request** from my **fork** to the **original repo**
+
+- The Fork and Clone Workflow
+
+  - **Fork** the repo you want on Github
+  - **Clone** the repo down to your local machine, the `origin` will be your own forked repo
+  - Add a remote pointing to the **original repo**, i.e., `upstream` pointing to the original repo
+    - Thus, if there are changes (commits, PR merges, …) made to the original repository, we can pull those changes down
+    - `git remote add upstream <original-url>`
+
+- Now, we have **two remotes**![FC-3](../Assets/FC-3.png)
+
+- Make changes and add/commit on a feature branch on your local machine
+- Push up new feature branch to `origin` (your forked repo)
+- Open a **pull request** to the original project repo containing the new work on your forked repo![fc-5](../Assets/fc-5.png)
+
+- Advantages of fork and clone workflow
+  - allows a project maintainer to accept contributions from developers all around the world
+  - without having to add them as actual owners of the main project repo
+  - or, without worrying about giving them all permission to push to the repo
