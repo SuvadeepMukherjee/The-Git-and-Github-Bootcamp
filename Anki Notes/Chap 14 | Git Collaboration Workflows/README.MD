@@ -37,6 +37,9 @@ Anki ➡️ 14-git-colloboration-workflows
 - Now we have 2 remotes (origin and upstream)
 - To get a better undertstanding do some commits on upstream and pull in to your local![FC-3](../../Assets/FC-3.png) 
 
+
+![fc-5](../../Assets/fc-5.png)
+
 - Make changes and add/commit on a feature branch on your local machine
 - Push up new feature branch to origin (your forked repo)
 - Open a PR to the original Project repo containing the new work on your forked repo 
