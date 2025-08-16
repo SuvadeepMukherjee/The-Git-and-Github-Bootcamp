@@ -12,7 +12,7 @@ Anki ➡️ 15-rebasing
   - i.e re-base-ing them at the tip of the master
 - Rebasing rewrites history by creating new commits for each of the original feature branches ![rebasing](../../Assets/rebasing.png) 
 
-#### Q2:How to rebase ? 
+#### Q2:How to rebase ? (To get a better understanding do a demo of rebase)
 
 **Solution**:
 
