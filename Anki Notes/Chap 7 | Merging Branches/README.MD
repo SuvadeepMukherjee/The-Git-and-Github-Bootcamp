@@ -54,3 +54,13 @@ Resolving Conflicts
 - Edit the file(s) to remove duplicates .Decide which branch's content we want to keep in each conflict or keep the content from both 
 - Remove the conflict markers in the document 
 - Add your changes and then make a commit
+
+#### Q6:We are trying to merge branchB into master and there is  a conflict which lines are coming from master and which lines are coming from branchB ? 
+
+![999-merge-conflict](../../Assets/999-merge-conflict.png)
+
+**Solution**:
+
+<<<<<<< From HEAD (Current Change) to =====  is the lines of code for our current branch and ====== to >>>>> branchB(Incoming Change) is the lines of code from the other branch and the conflict between the 2 branches is in line 2    
+
+ 
