@@ -10,7 +10,8 @@ Anki ➡️ 15-rebasing
 - If we rebase the feature branch onto the master branch we actually rewrite history and end up with a linear structure 
 - This moves the entire feature branch so that it begins at the tip of the master branch 
   - i.e re-base-ing them at the tip of the master
-- Rebasing rewrites history by creating new commits for each of the original feature branches ![rebasing](../../Assets/rebasing.png) 
+- Rebasing rewrites history by creating new commits for each of the original feature branches ![rebasing](../../Assets/rebasing.png)
+- We can also wait until we are done with a feature and then rebase the feature branch onto the master branch![00REBASING](/Users/suvadeep/Desktop/The Git and Github Bootcamp/Assets/00REBASING.png) 
 
 #### Q2:How to rebase ? (To get a better understanding do a demo of rebase)
 
@@ -40,6 +41,21 @@ git rebase master
   - Since you have commits that don't even exist in other's history, and they have commits that don't exist in yours (since you've rebased!)
 
 #### Q4:How to handle conflicts during rebasing ? 
+
+(To get a better understanding do a demo)
+
+- Set up a test repository 
+  - Create a folder called rebase-demo
+  - Add a file called file.txt and add initial content on it 
+  - commit it 
+- Create a new feature branch 
+  - git checkout -b "feature-branch"
+  - echo "some feature content">>file.txt
+  - git commit -am "Add feature content"
+- Make more changes to the main branch
+  - git switch master
+  - echo "Another line in main">>file.txt
+  - git commit -am "update in main" 
 
 **Solution**:
 
