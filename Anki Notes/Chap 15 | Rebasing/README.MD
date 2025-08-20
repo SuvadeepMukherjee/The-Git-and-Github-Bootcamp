@@ -59,8 +59,24 @@ git rebase master
 
 **Solution**:
 
-1. Resolve the conflict in your files
-2. `git add <conflicted-files>` to mark them as resolved
-3. run `git rebase --continue`
+- Resolve the conflict in your files
 
-Just follow the bash instruction if you forget what to do . 
+  - Note ➡️ Even though we have switched to feat the HEAD will point at master , it is one of the quirks of git ![zzz-quirks-rebase-conflict](../../Assets/zzz-quirks-rebase-conflict.png)
+  - Fix the conflicts
+
+- git add conflicted-files to mark them as resolved 
+
+- Now it will prompt to enter vscode/vim to enter a commit message 
+
+  - Note ➡️When you do a **`git rebase --continue`**, Git needs to **finalize the commit** for the changes it just applied.(for the conflict commit)
+
+    - During a rebase, Git is replaying commits from your branch on top of another branch (e.g., `master`).
+    - If one of those commits causes a **conflict**, Git pauses and asks you to resolve it.
+    - After you resolve the conflict and run `git add`, Git is ready to re-apply that commit.
+    - But since the content has changed (because you had to resolve conflicts manually), Git gives you a chance to **edit the commit message** before finishing.
+
+    👉 That Vim window shows the **commit message for the commit currently being applied** in the rebase.
+
+    - Usually, it’s pre-filled with the original commit message.
+    - You can **leave it as is**  if you don’t want to change the message.
+    - Or you can edit it if you want a new commit message that better reflects the resolution.
