@@ -79,4 +79,4 @@ git rebase master
 
     - Usually, it’s pre-filled with the original commit message.
     - You can **leave it as is**  if you don’t want to change the message.
-    - Or you can edit it if you want a new commit message that better reflects the resolution.
+    - Or you can edit it if you want a new commit message that better reflects the resolution
