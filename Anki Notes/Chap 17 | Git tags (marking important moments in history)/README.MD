@@ -60,7 +60,7 @@ To view the state of a repo at a particular tag we can use `git checkout <tag>`
 
 **Solution**:
 
-- To comapare 2 tags use `git diff v1.0.0 v2.0.0`
+- To compare 2 tags use `git diff v1.0.0 v2.0.0`
 
 #### Q10:How to create lightweight tags ? 
 
@@ -105,7 +105,7 @@ We can also tag an older commit by providing the commit hash
 
 Use `git tag -d tagname` to delete a tag 
 
-#### Q16:By default does `git push` push tags to remote ? 
+#### Q16:By default does `git push` pushes tags to remote ? 
 
 **Solution**:
 
