@@ -61,3 +61,64 @@ To view the state of a repo at a particular tag we can use `git checkout <tag>`
 **Solution**:
 
 - To comapare 2 tags use `git diff v1.0.0 v2.0.0`
+
+#### Q10:How to create lightweight tags ? 
+
+**Solution**:
+
+- use `git tag tag-name` to create a lightweight tag 
+- By default git will create the tag referring to the commit that HEAD is referring
+
+#### Q11:How to create annotated tags ?
+
+**Solution**:
+
+- use `git tag -a` to create a new annotated tag 
+- git will then open your default text editor and prompt you for additional information 
+
+#### Q12:How to see the metadata of an annotated tag ? 
+
+**Solution**;
+
+To see the metadata of annotated tag, use `git show <tagname>`
+
+#### Q13:How to tag a previous commit ? 
+
+**Solution**:
+
+We can also tag an older commit by providing the commit hash
+
+`git tag -a tagname commit-hash`
+
+#### Q14:Git will yell at us if we try to reuse a tag that is already referring to a commit . If we use the ____ option , we can FORCE our tag through and thus move the tag to the new commit we want to have that tag
+
+**Solution**:
+
+`git tag -f v1.0.0`
+
+1. Git will yell at us if we try to **reuse a tag** that is already referring to a commit
+2. If we use the `-f` option, we can FORCE our tag through and thus move the tag to the new commit we want to have that tag
+
+##### Q15:How to delete a tag ? 
+
+**Solution**:
+
+Use `git tag -d tagname` to delete a tag 
+
+#### Q16:By default does `git push` push tags to remote ? 
+
+**Solution**:
+
+- By default `git push` does not transfer tags to remote servers 
+
+#### Q17:How to push all of your tags to the remote ? 
+
+**Solution**:
+
+- `git push <remote> --tags`
+
+#### Q18:How to push a single tag to remote ? 
+
+**Solution**:
+
+`git push remote tag-name`

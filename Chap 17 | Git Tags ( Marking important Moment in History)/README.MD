@@ -50,4 +50,37 @@
    - This puts us in detached HEAD!
 2. Use `git diff v1.0.0 v2.0.0` to compare them for example
 
-   
+
+## Creating Lightweight Tags
+
+1. Use `git tag <tagname>` to create a lightweight tag
+2. By default, Git will create the tag referring to the **commit** that **HEAD is referencing**
+
+## Creating Annotated Tags
+
+1. Use `git tag -a` to create a new annotated tag
+   - Git will then open your default text editor and prompt you for additional information
+2. Similar to git commit, we can also use the `-m` option to pass a message directly and forgo the opening of the text editor
+3. To see the metadata of annotated tag, use `git show <tagname>`
+
+## Tagging Previous Commits
+
+1. We can also tag an older commit by providing the commit hash: `git tag -a <tagname> <commit-hash>`
+
+## Replacing Tag with Force
+
+1. Git will yell at us if we try to **reuse a tag** that is already referring to a commit
+2. If we use the `-f` option, we can FORCE our tag through and thus move the tag to the new commit we want to have that tag
+
+Command : `git tag -f v1.0.0`
+
+## Deleting Tag
+
+1. Use `git tag -d <tagname>` to delete a tag
+
+## Pushing Tags
+
+1. By default, the `git push` command **DOES NOT** transfer tags to remote servers
+2. If you have a lot of tags that you want to push up at once, you can use the `git push <remote> --tags`
+   - This will transfer all of your tags to the remote server that are not already there
+3. If you just want to push a single tag to remote, use `git push <remote> <tagname>`
